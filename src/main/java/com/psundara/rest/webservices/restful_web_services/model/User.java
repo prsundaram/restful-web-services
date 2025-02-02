@@ -7,9 +7,9 @@ import java.time.LocalDate;
 
 public class User {
     private Integer id;
-    @Size(min = 2, max = 30)
+    @Size(min = 2, max = 30, message = "Name should have atleast 2 characters")
     private String name;
-    @Past
+    @Past(message = "Birth Date should be in the past")
     private LocalDate birthDate;
 
     public Integer getId() {
