@@ -1,4 +1,4 @@
-package com.psundara.rest.webservices.restful_web_services.model;
+package com.psundara.rest.webservices.model;
 
 public class HelloWorld {
     private String message;

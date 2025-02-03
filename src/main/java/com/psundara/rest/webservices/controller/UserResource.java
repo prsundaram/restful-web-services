@@ -1,8 +1,8 @@
-package com.psundara.rest.webservices.restful_web_services.controller;
+package com.psundara.rest.webservices.controller;
 
-import com.psundara.rest.webservices.restful_web_services.dao.UserDaoService;
-import com.psundara.rest.webservices.restful_web_services.exception.UserNotFoundException;
-import com.psundara.rest.webservices.restful_web_services.model.User;
+import com.psundara.rest.webservices.dao.UserDaoService;
+import com.psundara.rest.webservices.exception.UserNotFoundException;
+import com.psundara.rest.webservices.model.User;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

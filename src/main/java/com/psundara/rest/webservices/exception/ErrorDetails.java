@@ -1,4 +1,4 @@
-package com.psundara.rest.webservices.restful_web_services.exception;
+package com.psundara.rest.webservices.exception;
 
 import java.time.LocalDateTime;
 

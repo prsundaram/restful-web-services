@@ -1,7 +1,4 @@
 # Read Me First
-The following was discovered as part of building this project:
-
-* The original package name 'com.psundara.rest.webservices.restful-web-services' is invalid and this project uses 'com.psundara.rest.webservices.restful_web_services' instead.
 
 # Getting Started
 

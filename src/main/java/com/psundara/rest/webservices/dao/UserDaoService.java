@@ -1,6 +1,6 @@
-package com.psundara.rest.webservices.restful_web_services.dao;
+package com.psundara.rest.webservices.dao;
 
-import com.psundara.rest.webservices.restful_web_services.model.User;
+import com.psundara.rest.webservices.model.User;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;

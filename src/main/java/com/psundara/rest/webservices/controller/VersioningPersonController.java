@@ -1,8 +1,8 @@
-package com.psundara.rest.webservices.restful_web_services.controller;
+package com.psundara.rest.webservices.controller;
 
-import com.psundara.rest.webservices.restful_web_services.model.Name;
-import com.psundara.rest.webservices.restful_web_services.model.PersonV2;
-import com.psundara.rest.webservices.restful_web_services.model.PersonV1;
+import com.psundara.rest.webservices.model.Name;
+import com.psundara.rest.webservices.model.PersonV2;
+import com.psundara.rest.webservices.model.PersonV1;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

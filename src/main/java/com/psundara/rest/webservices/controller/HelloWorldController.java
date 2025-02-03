@@ -1,6 +1,6 @@
-package com.psundara.rest.webservices.restful_web_services.controller;
+package com.psundara.rest.webservices.controller;
 
-import com.psundara.rest.webservices.restful_web_services.model.HelloWorld;
+import com.psundara.rest.webservices.model.HelloWorld;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;

@@ -1,4 +1,4 @@
-package com.psundara.rest.webservices.restful_web_services;
+package com.psundara.rest.webservices;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
