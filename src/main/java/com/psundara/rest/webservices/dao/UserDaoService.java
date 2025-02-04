@@ -1,43 +1,35 @@
 package com.psundara.rest.webservices.dao;
 
 import com.psundara.rest.webservices.model.User;
-import org.springframework.stereotype.Component;
+import com.psundara.rest.webservices.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
-@Component
+@Service
 public class UserDaoService {
 
-    private static final List<User> users = new ArrayList<>();
+    private final UserRepository userRepository;
 
-    private static int usersCount = 0;
-
-    static {
-        users.add(new User(++usersCount, "Adam", LocalDate.now().minusYears(30)));
-        users.add(new User(++usersCount, "Eve", LocalDate.now().minusYears(25)));
-        users.add(new User(++usersCount, "Jim", LocalDate.now().minusYears(20)));
+    @Autowired
+    public UserDaoService(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
     public List<User> finalAll() {
-        return users;
+        return userRepository.findAll();
     }
 
     public User findOne(Integer id) {
-        Predicate<User> predicate = user -> user.getId().equals(id);
-        return users.stream().filter(predicate).findFirst().orElse(null);
+        return userRepository.findById(id).orElse(null);
     }
 
     public User save(User user) {
-        user.setId(++usersCount);
-        users.add(user);
-        return user;
+        return userRepository.save(user);
     }
 
     public void deleteById(int id) {
-        Predicate<User> predicate = user -> user.getId().equals(id);
-        users.removeIf(predicate);
+        userRepository.deleteById(id);
     }
 }
